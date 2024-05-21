@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MechFi Vanilla JS Prototype Build</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" defer="" src="./app.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1 id="hud">Currently Controlling: Points</h1>
+      <div id="ctrlWrapper" class="row">
+        
+        <div class = "ctrlCol">
+          <label class="ctrlSwitch">
+            <input id="ctrlToggle"type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div id="controlPane"></div>
+        <div id="gltfCtrlDiv"></div>
+
+      </div>
+    </div>
+  </body>
+</html>
